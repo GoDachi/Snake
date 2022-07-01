@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.body{
+  background-image: url("snake-img.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  display: flex;/*Creating divs inside flex-box is easy*/
+  justify-content: center;/*aligns all the elements to the center horizontally*/
+  align-items: center;/*aligns all the elements to the center vertically*/
+}
+
+#board{
+  position: absolute;
+  left: 20vw;
+  height: 92vmin;
+  width: 90vmin;
+  background: linear-gradient(pink , orange);
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18 , 1fr);
+  grid-template-columns: repeat(18 , 1fr);
+}
+
+.head{
+  background: linear-gradient(#5EE6EB , #21325E);
+  border: 2px solid purple;
+  border-radius: 12px;
+}
+
+.food{
+  background: linear-gradient(red , orange);
+  border: .25vmin solid black;
+  border-radius: 8px;
+}
+
+.snake-body{
+  background-color: purple;
+  border: .15vmin solid white;
+  border-radius: 100%;
+}
+
+#score{
+  position: absolute;
+  right: 10vw;
+  top: 1vh;
+  font-size: 7vh
+}
+
+#max-score{
+  position: absolute;
+  right: 8vw;
+  top: 10vh;
+  font-size: 4vh;
+}
